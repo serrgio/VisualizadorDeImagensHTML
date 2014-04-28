@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Visualizador de imagens</title>
+        <script language="javascript">        
+            function preview() {
+                var largura = 640; //Largura da Imagem de Preview!
+                var altura = 480; //Altura da Imagem de Preview!
+                document.visualizar.src = document.form1.foto.value;
+                document.visualizar.width = largura;
+                document.visualizar.height = altura;
+            }
+            function zoomIn(){
+                
+            }
+            function zoomOut(){
+                
+            }
+            function centralizar(){
+                
+            }
+            function limparDiv(){
+                
+            }
+        </script>
+    </head>
+
+    <body>
+        <form id="form1" name="form1" method="post" enctype="multipart/form-data" action="">
+            <table width="192" border="0" align="center">
+                <tr>
+                    <td width="186"><div align="center" class="letraaz">
+                            <div align="left">Tamanho: <span class="letracz"><strong>640x480 </strong></span></div>
+                        </div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div align="left">
+                            <input name="foto" type="file" id="foto" onchange="preview()" />
+                        </div></td></tr>
+                <tr>
+                    <td><div align="center">
+                           <img src="space.gif" name="visualizar" width="6" height="2" id="fotoshow" /></div></td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

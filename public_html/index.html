@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript" type="text/javascript">
+	function mostraImagem() {
+		var imagem = document.getElementById("imagem");
+		var diretorio = document.getElementById("diretorio").value;
+		var teste = diretorio.split("c:/java/imagens");
+		imagem.src = teste[3];
+	}
+</script>
+</head>
+
+<body>
+	<input type="file" id="diretorio" onchange="mostraImagem()" />
+	<img id="imagem" src="" alt="Imagem" />
+</body>
+</html>
