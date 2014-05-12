@@ -65,7 +65,7 @@ function mouseUp()
     window.removeEventListener('mousemove', divMove, true);
 }
 
-function mouseDown(e){
+function mouseDown(){
   window.addEventListener('mousemove', divMove, true);
 }
 
