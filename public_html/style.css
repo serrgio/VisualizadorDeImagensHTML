@@ -1,4 +1,18 @@
-
-.letraaz {
-
+.barra {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #666;
+	background-color: #EBEBEB;
+	padding: 10px;
+	text-align: center;
+}
+.dragme{
+	position:relative;
+	/*cursor: move;*/
+}
+.janela {
+	top: 100px;
+	text-align: center;
+}
+.tudo {
+	text-align: center;
 }
